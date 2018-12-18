@@ -117,6 +117,8 @@
           - wget
           - xutils-dev
           - xz-utils
+          - yapf
+          - yapf3
           - zsh
     - name: Enable/start services
       service:
