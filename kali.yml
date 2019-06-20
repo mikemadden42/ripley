@@ -19,16 +19,15 @@
           - cpio
           - curl
           - cython
-          - devscripts
           - dmidecode
           - dnsutils
           - dos2unix
           - enscript
           - ethtool
-          - flake8
           - fping
           - gawk
           - git
+          - gobuster
           - golang
           - grep
           - gzip
@@ -42,27 +41,13 @@
           - less
           - lftp
           - libboost-all-dev
-          - libcurl4-openssl-dev
-          - libibverbs-dev
-          - libimage-exiftool-perl
           - libkeyutils-dev
-          - libldap2-dev
-          - libmysqlclient-dev
-          - libncurses5-dev
-          - libnuma-dev
-          - libpam0g-dev
-          - libpcre3-dev
           - libperl-critic-perl
-          - libperl-dev
-          - libpopt-dev
-          - librdmacm-dev
-          - librpm-dev
-          - libsnmp-dev
           - libssl-dev
-          - libxml2-dev
           - lsof
           - make
           - mlocate
+          - mutt
           - net-tools
           - ninja-build
           - nmap
@@ -79,9 +64,9 @@
           - perltidy
           - pigz
           - procps
-          - pxz
+          - puppet
+          - puppet-lint
           - pychecker
-          - pydocstyle
           - pyflakes
           - pylint
           - python
@@ -102,21 +87,20 @@
           - rsync
           - rtorrent
           - ruby
-          - ruby-dev
-          - s3cmd
+          - s4cmd
           - screen
           - sed
           - silversearcher-ag
-          - snmp
           - strace
           - subversion
           - sudo
+          - sysstat
           - tar
           - tcpdump
           - tmux
           - vim-nox
+          - w3m
           - wget
-          - xutils-dev
           - xz-utils
           - zsh
     - name: Enable/start services
@@ -129,3 +113,4 @@
         - ntp
         - rsyslog
         - ssh
+        - sysstat
