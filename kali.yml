@@ -47,6 +47,7 @@
           - lsof
           - make
           - mlocate
+          - mtr
           - mutt
           - net-tools
           - ninja-build
@@ -97,6 +98,7 @@
           - sysstat
           - tar
           - tcpdump
+          - tcptraceroute
           - tmux
           - vim-nox
           - w3m

@@ -63,6 +63,7 @@
           - lsof
           - make
           - mlocate
+          - mtr
           - net-tools
           - ninja-build
           - nmap
@@ -113,6 +114,7 @@
           - sudo
           - tar
           - tcpdump
+          - tcptraceroute
           - tmux
           - vim-nox
           - wget
