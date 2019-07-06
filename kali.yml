@@ -41,6 +41,7 @@
           - less
           - lftp
           - libboost-all-dev
+          - libglib2.0-dev
           - libkeyutils-dev
           - libperl-critic-perl
           - libssl-dev
