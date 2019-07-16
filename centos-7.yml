@@ -1,0 +1,92 @@
+---
+- hosts: device
+  tasks:
+    - name: Install packages
+      yum:
+        name: "{{ packages }}"
+      vars:
+        packages:
+          - PyYAML
+          - bash
+          - bc
+          - bind-utils
+          - boost-devel
+          - bzip2
+          - centos-release-scl
+          - clang-devel
+          - cmake
+          - coreutils
+          - cpio
+          - createrepo
+          - curl
+          - deltarpm
+          - dmidecode
+          - enscript
+          - ethtool
+          - fping
+          - gawk
+          - gcc
+          - gcc-c++
+          - git
+          - glib2-devel
+          - golang
+          - grep
+          - gzip
+          - htop
+          - iotop
+          - iperf3
+          - java-1.8.0-openjdk
+          - java-1.8.0-openjdk-devel
+          - ksh
+          - less
+          - lftp
+          - lsof
+          - make
+          - mlocate
+          - net-tools
+          - ninja-build
+          - nmap
+          - ntp
+          - openssh
+          - openssl
+          - parted
+          - perl
+          - perltidy
+          - procps-ng
+          - pychecker
+          - python
+          - python-jinja2
+          - python2-pip
+          - python-psutil
+          - python-requests
+          - python-six
+          - redhat-lsb
+          - rpm-build
+          - rpmlint
+          - rsync
+          - ruby
+          - ruby-irb
+          - screen
+          - sed
+          - strace
+          - subversion
+          - sudo
+          - tar
+          - tcpdump
+          - tmux
+          - vim-enhanced
+          - wget
+          - xz
+          - yum-cron
+          - zsh
+    - name: Enable/start services
+      service:
+        name: "{{ item }}"
+        enabled: true
+        state: started
+      with_items:
+        - crond
+        - ntpd
+        - rsyslog
+        - sshd
+        - yum-cron
