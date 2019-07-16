@@ -1,3 +1,4 @@
+---
 - hosts: device
   tasks:
     - name: Install packages
@@ -124,7 +125,7 @@
     - name: Enable/start services
       service:
         name: "{{ item }}"
-        enabled: yes
+        enabled: true
         state: started
       with_items:
         - cron
