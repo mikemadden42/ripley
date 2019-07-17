@@ -83,13 +83,18 @@
         - rsyslog
         - sshd
         - yum-cron
+    - name: Add SCL repository
+      yum_repository:
+        name: scl
+        description: SCL YUM repo
+        baseurl: http://mirror.centos.org/centos-$releasever/$releasever/sclo/$basearch/rh/
     - name: Install SCL packages
       yum:
         name: "{{ packages }}"
       vars:
         packages:
           - devtoolset-8
-    - name: Add repository
+    - name: Add EPEL repository
       yum_repository:
         name: epel
         description: EPEL YUM repo
