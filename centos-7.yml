@@ -83,3 +83,20 @@
         - rsyslog
         - sshd
         - yum-cron
+    - name: Add repository
+      yum_repository:
+        name: epel
+        description: EPEL YUM repo
+        baseurl: https://download.fedoraproject.org/pub/epel/$releasever/$basearch/
+    - name: Install EPEL packages
+      yum:
+        name: "{{ packages }}"
+      vars:
+        packages:
+          - fping
+          - golang
+          - htop
+          - ninja-build
+          - pychecker
+          - python2-pip
+          - python-psutil
