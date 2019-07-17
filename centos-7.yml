@@ -88,6 +88,7 @@
         name: epel
         description: EPEL YUM repo
         baseurl: https://download.fedoraproject.org/pub/epel/$releasever/$basearch/
+        gpgkey: https://download.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-$releasever
     - name: Install EPEL packages
       yum:
         name: "{{ packages }}"
