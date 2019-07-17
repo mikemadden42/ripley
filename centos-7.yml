@@ -83,6 +83,12 @@
         - rsyslog
         - sshd
         - yum-cron
+    - name: Install SCL packages
+      yum:
+        name: "{{ packages }}"
+      vars:
+        packages:
+          - devtoolset-8
     - name: Add repository
       yum_repository:
         name: epel
