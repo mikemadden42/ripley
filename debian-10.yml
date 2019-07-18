@@ -1,0 +1,105 @@
+---
+- hosts: device
+  tasks:
+    - name: Install packages
+      apt:
+        name: "{{ packages }}"
+      vars:
+        packages:
+          - ant
+          - atop
+          - awscli
+          - bash
+          - build-essential
+          - bzip2
+          - clang
+          - clang-format
+          - cmake
+          - coreutils
+          - cpio
+          - curl
+          - cython
+          - dmidecode
+          - dnsutils
+          - dos2unix
+          - enscript
+          - fping
+          - gawk
+          - git
+          - golang
+          - grep
+          - gzip
+          - htop
+          - hwloc
+          - iftop
+          - iotop
+          - ipython
+          - ksh
+          - less
+          - lftp
+          - libboost-all-dev
+          - libkeyutils-dev
+          - libperl-critic-perl
+          - lsof
+          - make
+          - mlocate
+          - net-tools
+          - ninja-build
+          - nmap
+          - ntp
+          - openjdk-10-jdk
+          - openssh-client
+          - openssh-server
+          - openssl
+          - p7zip-full
+          - parted
+          - pbzip2
+          - pep8
+          - perl
+          - perltidy
+          - pigz
+          - pixz
+          - procps
+          - pychecker
+          - pyflakes
+          - pylint
+          - python
+          - python-boto
+          - python-jinja2
+          - python-nose
+          - python-pip
+          - python-psutil
+          - python-requests
+          - python-six
+          - python-virtualenv
+          - python-yaml
+          - python3-jinja2
+          - python3-psutil
+          - python3-requests
+          - python3-six
+          - python3-yaml
+          - rsync
+          - ruby
+          - screen
+          - sed
+          - silversearcher-ag
+          - strace
+          - subversion
+          - sudo
+          - tar
+          - tcpdump
+          - tmux
+          - vim-nox
+          - wget
+          - xz-utils
+          - zsh
+    - name: Enable/start services
+      service:
+        name: "{{ item }}"
+        enabled: true
+        state: started
+      with_items:
+        - cron
+        - ntp
+        - rsyslog
+        - ssh
