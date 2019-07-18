@@ -47,7 +47,7 @@
           - ninja-build
           - nmap
           - ntp
-          - openjdk-10-jdk
+          - openjdk-11-jdk
           - openssh-client
           - openssh-server
           - openssl
