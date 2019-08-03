@@ -13,6 +13,7 @@
           - bc
           - build-essential
           - bzip2
+          - cargo
           - clang
           - clang-format
           - cmake
@@ -91,6 +92,7 @@
           - rsync
           - rtorrent
           - ruby
+          - rustc
           - s4cmd
           - screen
           - sed
