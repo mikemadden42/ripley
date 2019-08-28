@@ -38,8 +38,13 @@
           - less
           - lftp
           - libboost-all-dev
+          - libglib2.0-dev
           - libkeyutils-dev
+          - libpcap-dev
           - libperl-critic-perl
+          - librpm-dev
+          - libssl-dev
+          - libsystemd-dev
           - lsof
           - make
           - mlocate
