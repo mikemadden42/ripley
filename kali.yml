@@ -23,6 +23,7 @@
           - awscli
           - bash
           - bc
+          - black
           - build-essential
           - bzip2
           - cargo
@@ -38,6 +39,7 @@
           - dos2unix
           - enscript
           - ethtool
+          - flake8
           - fping
           - gawk
           - git
@@ -85,6 +87,7 @@
           - puppet-lint
           - pyflakes
           - pylint
+          - pylint3
           - python
           - python-boto
           - python-jinja2
@@ -95,11 +98,13 @@
           - python-six
           - python-virtualenv
           - python-yaml
+          - python3-flake8
           - python3-jinja2
           - python3-psutil
           - python3-requests
           - python3-six
           - python3-yaml
+          - python3-yapf
           - rsync
           - rtorrent
           - ruby
@@ -121,6 +126,7 @@
           - weechat
           - wget
           - xz-utils
+          - yapf3
           - zsh
     - name: Enable/start services
       service:
