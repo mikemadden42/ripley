@@ -10,6 +10,7 @@
           - atop
           - awscli
           - bash
+          - black
           - build-essential
           - bzip2
           - clang
@@ -23,6 +24,7 @@
           - dnsutils
           - dos2unix
           - enscript
+          - flake8
           - fping
           - gawk
           - git
@@ -68,8 +70,10 @@
           - pychecker
           - pyflakes
           - pylint
+          - pylint3
           - python
           - python-boto
+          - python-boto3
           - python-jinja2
           - python-nose
           - python-pip
@@ -78,10 +82,16 @@
           - python-six
           - python-virtualenv
           - python-yaml
+          - python3-boto
+          - python3-boto3
           - python3-jinja2
+          - python3-nose
+          - python3-pip
           - python3-psutil
+          - python3-pytest
           - python3-requests
           - python3-six
+          - python3-virtualenv
           - python3-yaml
           - rsync
           - ruby
@@ -97,6 +107,7 @@
           - vim-nox
           - wget
           - xz-utils
+          - yapf3
           - zsh
     - name: Enable/start services
       service:
