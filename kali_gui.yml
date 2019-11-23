@@ -1,0 +1,13 @@
+---
+- hosts: device
+  tasks:
+    - name: Install packages
+      apt:
+        name: "{{ packages }}"
+      vars:
+        packages:
+          - dconf-cli
+          - keepassxc
+          - uuid-runtime
+          - vagrant
+          - virtualbox

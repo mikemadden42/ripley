@@ -133,6 +133,7 @@
           - weechat
           - wget
           - xz-utils
+          - yamllint
           - yapf3
           - zsh
     - name: Enable/start services
