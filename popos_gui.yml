@@ -1,0 +1,11 @@
+---
+- hosts: device
+  tasks:
+    - name: Install packages
+      apt:
+        name: "{{ packages }}"
+      vars:
+        packages:
+          - keepassxc
+          - vagrant
+          - virtualbox
