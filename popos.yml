@@ -18,6 +18,7 @@
         name: "{{ packages }}"
       vars:
         packages:
+          - acpi
           - ant
           - atop
           - awscli
