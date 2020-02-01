@@ -50,6 +50,7 @@
           - lsof
           - make
           - mlocate
+          - neovim
           - net-tools
           - ninja-build
           - nmap

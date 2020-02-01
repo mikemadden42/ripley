@@ -109,6 +109,7 @@
           - fping
           - golang
           - htop
+          - neovim
           - ninja-build
           - pychecker
           - python2-pip

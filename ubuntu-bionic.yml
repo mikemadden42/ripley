@@ -54,6 +54,7 @@
           - mlocate
           - mtr
           - mutt
+          - neovim
           - net-tools
           - ninja-build
           - nmap
