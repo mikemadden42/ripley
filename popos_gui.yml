@@ -6,6 +6,7 @@
         name: "{{ packages }}"
       vars:
         packages:
+          - handbrake
           - keepassxc
           - vagrant
           - virtualbox
