@@ -1,2 +1,8 @@
 [device]
 localhost
+
+[device:vars]
+# centos 7, debian 9
+#ansible_python_interpreter=/usr/bin/python2
+# centos 8, debian 10, kali, popos, ubuntu 18.04
+ansible_python_interpreter=/usr/bin/python3
