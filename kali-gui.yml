@@ -9,5 +9,3 @@
           - dconf-cli
           - keepassxc
           - uuid-runtime
-          - vagrant
-          - virtualbox
