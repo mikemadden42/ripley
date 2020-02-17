@@ -50,6 +50,7 @@
           - htop
           - hwloc
           - iftop
+          - inxi
           - iotop
           - iperf3
           - ipython
@@ -113,6 +114,7 @@
           - python3-pytest
           - python3-requests
           - python3-six
+          - python3-venv
           - python3-virtualenv
           - python3-yaml
           - rsync
