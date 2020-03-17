@@ -138,6 +138,7 @@
           - weechat
           - wget
           - xz-utils
+          - xxhash
           - yamllint
           - yapf3
           - zsh
