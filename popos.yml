@@ -80,6 +80,7 @@
           - openssh-server
           - openssl
           - p7zip-full
+          - pandoc
           - parted
           - pbzip2
           - pep8
@@ -124,6 +125,7 @@
           - screen
           - sed
           - silversearcher-ag
+          - sshpass
           - strace
           - subversion
           - sudo
@@ -131,17 +133,19 @@
           - tar
           - tcpdump
           - tcptraceroute
+          - texlive-xetex
           - tmux
           - vim-nox
           - w3m
           - wavemon
           - weechat
           - wget
-          - xz-utils
           - xxhash
+          - xz-utils
           - yamllint
           - yapf3
           - zsh
+          - zsync
     - name: Enable/start services
       service:
         name: "{{ item }}"

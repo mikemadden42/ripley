@@ -11,6 +11,7 @@
           - awscli
           - bash
           - bc
+          - black
           - build-essential
           - bzip2
           - clang
@@ -64,6 +65,7 @@
           - openssh-server
           - openssl
           - p7zip-full
+          - pandoc
           - parted
           - pbzip2
           - pep8
@@ -94,6 +96,7 @@
           - screen
           - sed
           - silversearcher-ag
+          - sshpass
           - strace
           - subversion
           - sudo
@@ -101,6 +104,7 @@
           - tar
           - tcpdump
           - tcptraceroute
+          - texlive-xetex
           - tmux
           - vim-nox
           - w3m
@@ -111,6 +115,7 @@
           - yamllint
           - yapf3
           - zsh
+          - zsync
     - name: Enable/start services
       service:
         name: "{{ item }}"
