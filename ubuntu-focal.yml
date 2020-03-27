@@ -6,6 +6,7 @@
         name: "{{ packages }}"
       vars:
         packages:
+          - acpi
           - ant
           - atop
           - awscli
@@ -50,6 +51,7 @@
           - librpm-dev
           - libssl-dev
           - libsystemd-dev
+          - llvm
           - lsof
           - make
           - mlocate
@@ -89,6 +91,7 @@
           - python3-six
           - python3-virtualenv
           - python3-yaml
+          - python3-venv
           - rsync
           - rtorrent
           - ruby
