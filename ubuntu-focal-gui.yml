@@ -6,5 +6,6 @@
         name: "{{ packages }}"
       vars:
         packages:
+          - gnome-tweaks
           - handbrake
           - keepassxc
