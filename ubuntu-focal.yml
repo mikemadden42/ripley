@@ -31,12 +31,14 @@
           - fping
           - gawk
           - git
+          - gobuster
           - golang
           - grep
           - gzip
           - htop
           - hwloc
           - iftop
+          - inxi
           - iotop
           - iperf3
           - ipython
@@ -114,6 +116,7 @@
           - wavemon
           - weechat
           - wget
+          - xxhash
           - xz-utils
           - yamllint
           - yapf3

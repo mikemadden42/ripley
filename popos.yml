@@ -1,18 +1,6 @@
 ---
 - hosts: device
   tasks:
-    - name: Update the package database
-      apt:
-        update_cache: yes
-    - name: Update all packages to the latest version
-      apt:
-        upgrade: dist
-    - name: Remove useless packages from the cache
-      apt:
-        autoclean: yes
-    - name: Remove dependencies that are no longer required
-      apt:
-        autoremove: yes
     - name: Install packages
       apt:
         name: "{{ packages }}"
@@ -65,6 +53,7 @@
           - librpm-dev
           - libssl-dev
           - libsystemd-dev
+          - llvm
           - lsof
           - make
           - mlocate
