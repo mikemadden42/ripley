@@ -78,8 +78,6 @@
           - pigz
           - pkg-config
           - procps
-          - puppet
-          - puppet-lint
           - pyflakes
           - pylint
           - python
@@ -125,6 +123,7 @@
           - texlive-xetex
           - tmux
           - vim-nox
+          - vorbis-tools
           - w3m
           - wavemon
           - weechat
