@@ -6,7 +6,9 @@
         name: "{{ packages }}"
       vars:
         packages:
+          - cheese
           - gnome-tweaks
           - handbrake
           - keepassxc
+          - rhythmbox
           - sound-juicer
