@@ -9,10 +9,13 @@
           - exploitdb
           - fping
           - git
+          - gobuster
+          - masscan
           - nmap
           - rsync
           - tcpdump
           - vim-nox
+          - wordlists
     - name: Enable/start services
       service:
         name: "{{ item }}"
