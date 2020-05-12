@@ -6,6 +6,8 @@
         name: "{{ packages }}"
       vars:
         packages:
+          - build-essential
+          - cmake
           - exploitdb
           - fping
           - git
