@@ -1,0 +1,22 @@
+---
+- hosts: device
+  tasks:
+    - name: Install packages
+      apt:
+        name: "{{ packages }}"
+      vars:
+        packages:
+          - exploitdb
+          - fping
+          - git
+          - nmap
+          - rsync
+          - tcpdump
+          - vim-nox
+    - name: Enable/start services
+      service:
+        name: "{{ item }}"
+        enabled: true
+        state: started
+      with_items:
+        - ssh
