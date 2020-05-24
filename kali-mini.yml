@@ -8,6 +8,7 @@
         packages:
           - build-essential
           - cmake
+          - curl
           - exploitdb
           - fping
           - git
@@ -17,8 +18,10 @@
           - openssh-server
           - rsync
           - tcpdump
+          - tmux
           - vim-nox
           - wordlists
+          - zsh
     - name: Enable/start services
       service:
         name: "{{ item }}"
