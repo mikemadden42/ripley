@@ -13,9 +13,11 @@
           - fping
           - git
           - gobuster
+          - libssl-dev
           - masscan
           - nmap
           - openssh-server
+          - pkg-config
           - rsync
           - tcpdump
           - tmux
