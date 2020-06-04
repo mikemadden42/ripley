@@ -93,6 +93,7 @@
           - python3-venv
           - python3-virtualenv
           - python3-yaml
+          - remmina
           - rsync
           - rtorrent
           - ruby
