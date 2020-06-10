@@ -18,6 +18,7 @@
           - nmap
           - openssh-server
           - pkg-config
+          - powershell
           - rsync
           - tcpdump
           - tmux
