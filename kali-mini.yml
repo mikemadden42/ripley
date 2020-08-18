@@ -11,10 +11,13 @@
           - cmake
           - curl
           - exploitdb
+          - fcrackzip
           - flake8
           - fping
           - git
           - gobuster
+          - hashcat
+          - john
           - libssl-dev
           - masscan
           - nmap
