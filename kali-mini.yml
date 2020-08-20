@@ -19,6 +19,7 @@
           - hashcat
           - john
           - libssl-dev
+          - locate
           - masscan
           - nmap
           - openssh-server
