@@ -36,6 +36,7 @@
           - grep
           - gzip
           - htop
+          - hwinfo
           - hwloc
           - iftop
           - inxi
