@@ -27,6 +27,7 @@
           - dos2unix
           - enscript
           - ethtool
+          - ffmpeg
           - flake8
           - fping
           - gawk
