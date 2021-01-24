@@ -12,6 +12,7 @@
           - curl
           - exploitdb
           - fcrackzip
+          - ffmpeg
           - flake8
           - fping
           - git
