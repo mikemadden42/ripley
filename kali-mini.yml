@@ -17,6 +17,7 @@
           - git
           - gobuster
           - hashcat
+          - iperf3
           - john
           - libssl-dev
           - locate
