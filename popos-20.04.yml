@@ -15,6 +15,7 @@
           - black
           - build-essential
           - bzip2
+          - cifs-utils
           - clang
           - clang-format
           - cmake
@@ -78,6 +79,7 @@
           - perl
           - perltidy
           - pigz
+          - pipenv
           - pkg-config
           - procps
           - pyflakes
