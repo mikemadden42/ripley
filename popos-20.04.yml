@@ -18,6 +18,8 @@
           - cifs-utils
           - clang
           - clang-format
+          - clang-tidy
+          - clang-tools
           - cmake
           - coreutils
           - cpio
@@ -125,6 +127,7 @@
           - yamllint
           - yapf3
           - zsh
+          - zstd
           - zsync
     - name: Enable/start services
       service:
