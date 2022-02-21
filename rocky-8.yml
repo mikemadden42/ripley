@@ -52,6 +52,7 @@
           - python2-requests
           - python2-six
           - python3
+          - python3-dnf-plugin-versionlock
           - python3-jinja2
           - python3-pip
           - python3-pyyaml
@@ -74,6 +75,7 @@
           - wget
           - xz
           - zsh
+          - zstd
     - name: Install EPEL packages
       yum:
         name: "{{ packages }}"
