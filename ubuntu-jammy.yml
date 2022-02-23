@@ -117,6 +117,7 @@
           - yamllint
           - yapf3
           - zsh
+          - zstd
           - zsync
     - name: Enable/start services
       service:
