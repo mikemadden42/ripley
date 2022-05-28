@@ -1,0 +1,22 @@
+---
+- hosts: device
+  tasks:
+    - name: Install packages
+      apt:
+        name: "{{ packages }}"
+      vars:
+        packages:
+          - bridge-utils
+          - cpu-checker
+          - libvirt-clients
+          - libvirt-daemon-system
+          - qemu-kvm
+          - virt-manager
+          - virtinst
+    - name: Enable/start services
+      service:
+        name: "{{ item }}"
+        enabled: true
+        state: started
+      with_items:
+        - libvirtd
