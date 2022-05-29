@@ -23,5 +23,5 @@
     - name: Setup KVM groups
       user:
         name: mjm
-        groups: libvirt,libvirt-dnsmasq,libvirt-qemu
+        groups: kvm,libvirt,libvirt-dnsmasq,libvirt-qemu
         append: true
