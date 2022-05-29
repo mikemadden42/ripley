@@ -20,3 +20,8 @@
         state: started
       with_items:
         - libvirtd
+    - name: Setup KVM groups
+      user:
+        name: mjm
+        groups: libvirt,libvirt-dnsmasq,libvirt-qemu
+        append: true
