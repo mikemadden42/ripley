@@ -8,6 +8,7 @@
         packages:
           - acpi
           - ant
+          - arp-scan
           - atop
           - awscli
           - bash

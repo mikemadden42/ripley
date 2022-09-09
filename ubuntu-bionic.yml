@@ -7,6 +7,7 @@
       vars:
         packages:
           - ant
+          - arp-scan
           - atop
           - awscli
           - bash

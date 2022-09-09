@@ -3,22 +3,23 @@
   tasks:
     - name: Update the package database
       apt:
-        update_cache: yes
+        update_cache: true
     - name: Update all packages to the latest version
       apt:
         upgrade: dist
     - name: Remove useless packages from the cache
       apt:
-        autoclean: yes
+        autoclean: true
     - name: Remove dependencies that are no longer required
       apt:
-        autoremove: yes
+        autoremove: true
     - name: Install packages
       apt:
         name: "{{ packages }}"
       vars:
         packages:
           - ant
+          - arp-scan
           - atop
           - awscli
           - bash
