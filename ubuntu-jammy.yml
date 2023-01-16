@@ -53,13 +53,21 @@
           - less
           - lftp
           - libboost-all-dev
+          - libbz2-dev
+          - libffi-dev
           - libglib2.0-dev
           - libkeyutils-dev
+          - liblzma-dev
+          - libncursesw5-dev
           - libpcap-dev
           - libperl-critic-perl
+          - libreadline-dev
           - librpm-dev
+          - libsqlite3-dev
           - libssl-dev
           - libsystemd-dev
+          - libxml2-dev
+          - libxmlsec1-dev
           - llvm
           - lsof
           - make
@@ -117,6 +125,7 @@
           - tcpdump
           - tcptraceroute
           - texlive-xetex
+          - tk-dev
           - tmux
           - vim-nox
           - vorbis-tools
@@ -128,6 +137,7 @@
           - xz-utils
           - yamllint
           - yapf3
+          - zlib1g-dev
           - zsh
           - zstd
           - zsync
