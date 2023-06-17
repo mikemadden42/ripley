@@ -20,10 +20,12 @@
           - gobuster
           - hashcat
           - iperf3
+          - iputils-ping
           - john
           - libssl-dev
           - locate
           - masscan
+          - netcat-openbsd
           - nmap
           - openssh-server
           - pkg-config
