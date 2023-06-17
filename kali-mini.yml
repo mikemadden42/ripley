@@ -6,6 +6,7 @@
         name: "{{ packages }}"
       vars:
         packages:
+          - arp-scan
           - black
           - build-essential
           - cmake
@@ -41,6 +42,7 @@
           - python3-venv
           - python3-yaml
           - rsync
+          - screen
           - tcpdump
           - tmux
           - vim-nox
