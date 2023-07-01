@@ -15,6 +15,7 @@
           - bash
           - bc
           - black
+          - btop
           - build-essential
           - bzip2
           - cifs-utils
