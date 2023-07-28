@@ -43,7 +43,7 @@
           - python3-six
           - python3-venv
           - python3-yaml
-          - rg
+          - ripgrep
           - rsync
           - screen
           - tcpdump
