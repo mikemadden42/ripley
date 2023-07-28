@@ -23,7 +23,7 @@
           - libssl-dev
           - locate
           - masscan
-          - netcat-openbsd
+          - netcat-traditional
           - nmap
           - openssh-server
           - pkg-config
