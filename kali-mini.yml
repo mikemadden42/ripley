@@ -8,6 +8,7 @@
         packages:
           - arp-scan
           - black
+          - btop
           - build-essential
           - cmake
           - curl
@@ -17,6 +18,7 @@
           - git
           - gobuster
           - hashcat
+          - htop
           - iperf3
           - iputils-ping
           - john
@@ -41,6 +43,7 @@
           - python3-six
           - python3-venv
           - python3-yaml
+          - rg
           - rsync
           - screen
           - tcpdump
