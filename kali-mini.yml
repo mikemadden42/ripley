@@ -27,6 +27,7 @@
           - locate
           - masscan
           - netcat-traditional
+          - ninja-build
           - nmap
           - openssh-server
           - pkg-config
