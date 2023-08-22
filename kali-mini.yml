@@ -49,6 +49,7 @@
           - ripgrep
           - rsync
           - screen
+          - seclists
           - tcpdump
           - tmux
           - vim-nox
