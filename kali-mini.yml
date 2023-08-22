@@ -31,6 +31,7 @@
           - nmap
           - openssh-server
           - pkg-config
+          - poppler-utils
           - powershell
           - pylint
           - python3-boto3

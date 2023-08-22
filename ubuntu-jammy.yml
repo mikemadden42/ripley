@@ -94,6 +94,7 @@
           - pigz
           - pipenv
           - pkg-config
+          - poppler-utils
           - procps
           - pyflakes3
           - pylint
