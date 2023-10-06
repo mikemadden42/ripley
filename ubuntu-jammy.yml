@@ -112,6 +112,7 @@
           - python3-venv
           - python3-virtualenv
           - python3-yaml
+          - qtbase5-dev
           - rsync
           - rtorrent
           - ruby
