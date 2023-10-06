@@ -96,6 +96,7 @@
           - pkg-config
           - poppler-utils
           - procps
+          - psmisc
           - pyflakes3
           - pylint
           - python3-boto
