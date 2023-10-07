@@ -75,6 +75,7 @@
           - mlocate
           - mtr
           - mutt
+          - ncdu
           - neovim
           - net-tools
           - ninja-build
