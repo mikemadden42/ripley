@@ -26,6 +26,7 @@
           - libssl-dev
           - locate
           - masscan
+          - ncdu
           - netcat-traditional
           - ninja-build
           - nmap
