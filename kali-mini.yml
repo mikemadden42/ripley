@@ -1,6 +1,15 @@
 ---
 - hosts: device
   tasks:
+    # powershell is not available on aarch64.
+    # It looks like it is only on x86_64.
+    - name: Install powershell
+      apt:
+        name: "{{ packages }}"
+      vars:
+        packages:
+          - powershell
+      when: ansible_architecture == "x86_64"
     - name: Install packages
       apt:
         name: "{{ packages }}"
@@ -33,7 +42,6 @@
           - openssh-server
           - pkg-config
           - poppler-utils
-          - powershell
           - pylint
           - python3-boto3
           - python3-dateutil
