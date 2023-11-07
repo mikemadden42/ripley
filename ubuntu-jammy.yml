@@ -138,6 +138,7 @@
           - wavemon
           - weechat
           - wget
+          - whois
           - xxhash
           - xz-utils
           - yamllint
