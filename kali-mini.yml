@@ -62,6 +62,7 @@
           - tcpdump
           - tmux
           - vim-nox
+          - whois
           - wordlists
           - zsh
     - name: Enable/start services
