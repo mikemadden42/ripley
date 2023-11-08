@@ -59,6 +59,7 @@
           - rsync
           - screen
           - seclists
+          - silversearcher-ag
           - tcpdump
           - tmux
           - vim-nox
