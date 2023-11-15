@@ -15,6 +15,8 @@
         name: "{{ packages }}"
       vars:
         packages:
+          - acpi
+          - alsa-utils
           - arp-scan
           - black
           - btop
