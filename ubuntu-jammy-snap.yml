@@ -1,0 +1,13 @@
+---
+- hosts: device
+  tasks:
+    - name: Install snaps
+      snap:
+        name: "{{ packages }}"
+        classic: true
+      vars:
+        packages:
+          - clion
+          - datagrip
+          - goland
+          - pycharm-professional
