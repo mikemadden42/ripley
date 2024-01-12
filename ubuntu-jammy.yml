@@ -55,6 +55,7 @@
           - lftp
           - libboost-all-dev
           - libbz2-dev
+          - libcdio-utils
           - libffi-dev
           - libglib2.0-dev
           - libkeyutils-dev
