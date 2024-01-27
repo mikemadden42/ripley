@@ -6,6 +6,7 @@
         name: "{{ packages }}"
       vars:
         packages:
-          - dconf-cli
+          - alacritty
+          - handbrake
           - keepassxc
-          - uuid-runtime
+          - sound-juicer
