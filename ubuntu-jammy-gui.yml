@@ -6,6 +6,9 @@
         name: "{{ packages }}"
       vars:
         packages:
+          - awesome
+          - awesome-doc
+          - awesome-extra
           - gnome-tweaks
           - handbrake
           - keepassxc
