@@ -121,6 +121,7 @@
           - s4cmd
           - screen
           - sed
+          - shellcheck
           - silversearcher-ag
           - sshpass
           - strace
