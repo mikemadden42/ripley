@@ -122,6 +122,7 @@
           - screen
           - sed
           - shellcheck
+          - shfmt
           - silversearcher-ag
           - sshpass
           - strace
