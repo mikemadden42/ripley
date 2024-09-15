@@ -9,7 +9,6 @@
           - acpi
           - arp-scan
           - atop
-          - awscli
           - b3sum
           - bash
           - bc
