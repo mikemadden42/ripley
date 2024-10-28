@@ -16,7 +16,7 @@
           - cpio
           - createrepo
           - chrony
-          - curl-minimal
+          - curl
           - dmidecode
           - enscript
           - ethtool
