@@ -34,6 +34,7 @@
           - ffmpeg
           - flake8
           - fping
+          - fzf
           - gawk
           - git
           - gobuster
@@ -112,6 +113,7 @@
           - python3-virtualenv
           - python3-yaml
           - qtbase5-dev
+          - ranger
           - rsync
           - rtorrent
           - ruby
