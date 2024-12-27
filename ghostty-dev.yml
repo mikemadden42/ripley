@@ -1,0 +1,11 @@
+---
+- hosts: device
+  tasks:
+    - name: Install ghostty development packages
+      apt:
+        name: "{{ packages }}"
+      vars:
+        packages:
+          - libgtk-4-dev
+          - libadwaita-1-dev
+          - git
