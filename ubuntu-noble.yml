@@ -49,6 +49,7 @@
           - iotop
           - iperf3
           - ipython3
+          - kitty
           - ksh
           - less
           - lftp
