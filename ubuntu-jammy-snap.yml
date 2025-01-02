@@ -12,3 +12,11 @@
           - goland
           - pycharm-professional
           - rustrover
+    - name: Install beta snaps with the classic confinement
+      snap:
+        name: "{{ packages }}"
+        channel: beta
+        classic: yes
+      vars:
+        packages:
+          - zig
