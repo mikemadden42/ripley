@@ -20,3 +20,11 @@
       vars:
         packages:
           - zig
+    - name: Install stable snaps with the classic confinement
+      snap:
+        name: "{{ packages }}"
+        channel: stable
+        classic: yes
+      vars:
+        packages:
+          - nvim
