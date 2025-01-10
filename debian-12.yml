@@ -28,6 +28,7 @@
           - htop
           - hwloc
           - less
+          - libzstd-dev
           - lsof
           - make
           - mlocate
