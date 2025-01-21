@@ -1,15 +1,17 @@
 ---
 - hosts: device
   tasks:
-    - name: Install snaps
+    - name: Install stable snaps with the classic confinement
       snap:
         name: "{{ packages }}"
-        classic: true
+        channel: stable
+        classic: yes
       vars:
         packages:
           - clion
           - datagrip
           - goland
+          - nvim
           - pycharm-professional
           - rustrover
     - name: Install beta snaps with the classic confinement
@@ -20,11 +22,3 @@
       vars:
         packages:
           - zig
-    - name: Install stable snaps with the classic confinement
-      snap:
-        name: "{{ packages }}"
-        channel: stable
-        classic: yes
-      vars:
-        packages:
-          - nvim
