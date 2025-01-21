@@ -68,6 +68,7 @@
           - libsqlite3-dev
           - libssl-dev
           - libsystemd-dev
+          - libuv1-dev
           - libxml2-dev
           - libxmlsec1-dev
           - llvm
