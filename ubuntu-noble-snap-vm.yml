@@ -1,0 +1,20 @@
+---
+- hosts: device
+  tasks:
+    - name: Install stable snaps with the classic confinement
+      snap:
+        name: "{{ packages }}"
+        channel: stable
+        classic: yes
+      vars:
+        packages:
+          - ghostty
+          - nvim
+    - name: Install beta snaps with the classic confinement
+      snap:
+        name: "{{ packages }}"
+        channel: beta
+        classic: yes
+      vars:
+        packages:
+          - zig
