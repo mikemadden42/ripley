@@ -1,0 +1,36 @@
+---
+- hosts: device
+  tasks:
+    - name: "Download NVIDIA CUDA keyring package"
+      ansible.builtin.get_url:
+        url: "https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-keyring_1.1-1_all.deb"
+        dest: "/tmp/cuda-keyring_1.1-1_all.deb"
+        mode: "0644"
+
+    - name: "Install NVIDIA CUDA keyring package from .deb file"
+      ansible.builtin.apt:
+        deb: "/tmp/cuda-keyring_1.1-1_all.deb"
+
+    - name: "Update APT package cache after adding repo key/source"
+      ansible.builtin.apt:
+        update_cache: yes
+
+    - name: Install packages
+      apt:
+        name: "{{ packages }}"
+      vars:
+        packages:
+          - build-essential
+          - cmake
+          - cuda-toolkit
+          - git
+          - libfreeimage-dev
+          - libglut-dev
+          - libvulkan-dev
+          - ninja-build
+          - nvtop
+
+    - name: "Clean up downloaded keyring .deb file"
+      ansible.builtin.file:
+        path: "/tmp/cuda-keyring_1.1-1_all.deb"
+        state: absent
