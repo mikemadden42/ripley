@@ -1,4 +1,5 @@
 ---
+# ansible-playbook -c local -i hosts.txt -K linux-docker.yml
 - name: Capture original user
   hosts: all
   become: false
@@ -13,12 +14,20 @@
 - name: Install Docker
   hosts: device
   become: true
+  become_method: sudo
 
   vars:
     docker_users:
       - "{{ hostvars['localhost']['original_ssh_user'] }}"
+    # Map architecture correctly for apt repository
+    apt_architecture: "{{ 'amd64' if ansible_architecture == 'x86_64' else ansible_architecture }}"
 
   tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600 # Consider cache valid for 1 hour
+
     - name: Remove older Docker packages
       apt:
         name:
@@ -37,7 +46,6 @@
           - curl
           - gnupg
         state: present
-        update_cache: yes
 
     - name: Create keyrings directory
       file:
@@ -57,9 +65,13 @@
 
     - name: Add Docker repository
       apt_repository:
-        repo: "deb [arch={{ ansible_architecture }} signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu {{ ansible_distribution_release }} stable"
+        repo: "deb [arch={{ apt_architecture }} signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu {{ ansible_distribution_release }} stable"
         state: present
         filename: docker
+
+    - name: Update apt cache after adding repository
+      apt:
+        update_cache: yes
 
     - name: Install Docker packages
       apt:
@@ -70,7 +82,6 @@
           - docker-buildx-plugin
           - docker-compose-plugin
         state: present
-        update_cache: yes
 
     - name: Add users to Docker group
       user:
@@ -78,6 +89,7 @@
         groups: docker
         append: yes
       loop: "{{ docker_users }}"
+      when: item != "root" # Skip if the user is root
 
     - name: Enable Docker services
       systemd:
