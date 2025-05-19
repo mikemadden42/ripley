@@ -11,11 +11,11 @@
           - bind-utils
           - boost-devel
           - bzip2
+          - chrony
           - clang-devel
           - cmake
           - cpio
           - createrepo
-          - chrony
           - curl-minimal
           - dmidecode
           - enscript
@@ -38,6 +38,7 @@
           - lsof
           - make
           - mlocate
+          - neovim
           - net-tools
           - nmap
           - openssh
