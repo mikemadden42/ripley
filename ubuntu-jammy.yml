@@ -35,6 +35,8 @@
           - ethtool
           - ffmpeg
           - flake8
+          - fonts-firacode
+          - fonts-jetbrains-mono
           - fping
           - fzf
           - gawk
