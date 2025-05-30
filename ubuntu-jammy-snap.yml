@@ -10,6 +10,7 @@
         packages:
           - clion
           - datagrip
+          - ghostty
           - goland
           - nvim
           - pycharm-professional
