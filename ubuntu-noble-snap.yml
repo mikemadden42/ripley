@@ -8,13 +8,8 @@
         classic: yes
       vars:
         packages:
-          - clion
-          - datagrip
           - ghostty
-          - goland
           - nvim
-          - pycharm-professional
-          - rustrover
     - name: Install beta snaps with the classic confinement
       snap:
         name: "{{ packages }}"
