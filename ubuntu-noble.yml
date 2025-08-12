@@ -51,6 +51,7 @@
           - iotop
           - iperf3
           - ipython3
+          - jq
           - kitty
           - ksh
           - less
