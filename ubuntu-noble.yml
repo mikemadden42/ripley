@@ -39,6 +39,7 @@
           - fzf
           - gawk
           - git
+          - git-delta
           - gobuster
           - golang
           - grep
