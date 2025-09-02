@@ -9,6 +9,7 @@
       vars:
         packages:
           - ghostty
+          - helix
           - nvim
     - name: Install beta snaps with the classic confinement
       snap:
