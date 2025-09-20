@@ -1,0 +1,19 @@
+---
+- hosts: device
+  tasks:
+    - name: Install flutter packages
+      apt:
+        name: "{{ packages }}"
+      vars:
+        packages:
+          - clang
+          - cmake
+          - git
+          - libglu1-mesa
+          - libgtk-3-dev
+          - libstdc++-12-dev
+          - ninja-build
+          - pkg-config
+          - unzip
+          - xz-utils
+          - zip
