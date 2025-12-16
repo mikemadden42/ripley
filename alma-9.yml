@@ -16,7 +16,7 @@
           - cmake
           - cpio
           - createrepo
-          - curl-minimal
+          - curl
           - dmidecode
           - enscript
           - ethtool
