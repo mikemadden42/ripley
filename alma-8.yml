@@ -38,10 +38,12 @@
           - lsof
           - make
           - mlocate
+          - ncurses-devel
           - net-tools
           - nmap
           - openssh
           - openssl
+          - pam-devel
           - parted
           - perl
           - procps-ng
