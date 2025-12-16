@@ -11,11 +11,11 @@
           - bind-utils
           - boost-devel
           - bzip2
+          - chrony
           - clang-devel
           - cmake
           - cpio
           - createrepo
-          - chrony
           - curl
           - dmidecode
           - enscript
