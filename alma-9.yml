@@ -38,7 +38,6 @@
           - lsof
           - make
           - mlocate
-          - neovim
           - net-tools
           - nmap
           - openssh
@@ -53,7 +52,6 @@
           - python3-pyyaml
           - python3-requests
           - python3-six
-          - ripgrep
           - rpm-build
           - rpmlint
           - rsync
