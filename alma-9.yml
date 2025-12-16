@@ -69,15 +69,6 @@
           - xz
           - zsh
           - zstd
-    - name: Install EPEL packages
-      yum:
-        name: "{{ packages }}"
-      vars:
-        packages:
-          - fping
-          - htop
-          - python3-psutil
-          - screen
     - name: Enable/start services
       service:
         name: "{{ item }}"
