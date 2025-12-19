@@ -53,7 +53,6 @@
           - python3-requests
           - python3-six
           - rpm-build
-          - rpmlint
           - rsync
           - ruby
           - ruby-irb
