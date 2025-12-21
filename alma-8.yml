@@ -70,6 +70,7 @@
           - strace
           - subversion
           - sudo
+          - sysstat
           - tar
           - tcpdump
           - tmux
@@ -84,6 +85,7 @@
         enabled: true
         state: started
       with_items:
-        - crond
         - chronyd
+        - crond
         - sshd
+        - sysstat
