@@ -1,0 +1,31 @@
+---
+- hosts: device
+  tasks:
+    - name: Install packages
+      yum:
+        name: "{{ packages }}"
+      vars:
+        packages:
+          - ansifilter
+          - b3sum
+          - bat
+          - du-dust
+          - dua-cli
+          - fastfetch
+          - fd-find
+          - fira-code-fonts
+          - fish
+          - git-delta
+          - gitui
+          - helix
+          - htop
+          - hyperfine
+          - kitty
+          - ncdu
+          - neovim
+          - ninja-build
+          - procs
+          - ranger
+          - screen
+          - the_silver_searcher
+          - tokei
