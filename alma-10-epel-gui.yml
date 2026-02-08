@@ -1,0 +1,9 @@
+---
+- hosts: device
+  tasks:
+    - name: Install EPEL GUI packages
+      yum:
+        name: "{{ packages }}"
+      vars:
+        packages:
+          - keepassxc
