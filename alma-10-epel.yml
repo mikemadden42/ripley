@@ -1,0 +1,26 @@
+---
+- hosts: device
+  tasks:
+    - name: Install EPEL packages
+      yum:
+        name: "{{ packages }}"
+      vars:
+        packages:
+          - ansifilter
+          - btop
+          - fastfetch
+          - fira-code-fonts
+          - htop
+          - ncdu
+          - neovim
+          - ninja-build
+          - screen
+    - name: Install EPEL rust packages
+      yum:
+        name: "{{ packages }}"
+      vars:
+        packages:
+          - bat
+          - fd-find
+          - ripgrep
+          - tokei
