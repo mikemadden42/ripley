@@ -19,6 +19,7 @@
           - curl
           - dmidecode
           - enscript
+          - epel-release
           - ethtool
           - gawk
           - gcc
