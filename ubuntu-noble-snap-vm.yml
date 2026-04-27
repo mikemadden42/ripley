@@ -8,6 +8,7 @@
         classic: yes
       vars:
         packages:
+          - gemini-cli
           - ghostty
           - gopls
           - helix
