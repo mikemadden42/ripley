@@ -1,14 +1,24 @@
 ---
 - hosts: device
   tasks:
-    - name: Install stable snaps with the classic confinement
+    - name: Install amd64-only stable snaps with the classic confinement
+      snap:
+        name: "{{ packages }}"
+        channel: stable
+        classic: yes
+      when: ansible_architecture == "x86_64"
+      vars:
+        packages:
+          - claude-code
+          - gemini-cli
+    - name: Install other stable snaps with the classic confinement
       snap:
         name: "{{ packages }}"
         channel: stable
         classic: yes
       vars:
         packages:
-          - gemini-cli
+          - chromium
           - ghostty
           - gopls
           - helix
