@@ -8,6 +8,7 @@
         packages:
           - ShellCheck
           - ansifilter
+          - arp-scan
           - b3sum
           - bat
           - du-dust
@@ -16,6 +17,7 @@
           - fd-find
           - fira-code-fonts
           - fish
+          - fping
           - git-delta
           - gitui
           - helix
