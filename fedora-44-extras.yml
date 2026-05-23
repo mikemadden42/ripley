@@ -36,4 +36,5 @@
           - shfmt
           - the_silver_searcher
           - tokei
+          - uv
           - zig
