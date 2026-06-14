@@ -22,6 +22,7 @@
           - cronie
           - curl
           - dmidecode
+          - dos2unix
           - dua-cli
           - dust
           - enscript
@@ -41,6 +42,7 @@
           - gzip
           - helix
           - htop
+          - hwloc
           - hyperfine
           - iotop
           - iperf3
@@ -60,18 +62,28 @@
           - nmap
           - openssh
           - openssl
+          - p7zip
           - parted
+          - pbzip2
           - perl
+          - perltidy
+          - pigz
+          - pixz
           - plocate
           - procps-ng
           - procs
           - python
+          - python-boto3
           - python-jinja
           - python-pip
+          - python-psutil
+          - python-pytest
           - python-requests
           - python-six
+          - python-virtualenv
           - python-yaml
           - ranger
+          - ripgrep
           - rsync
           - ruby
           - ruby-irb
