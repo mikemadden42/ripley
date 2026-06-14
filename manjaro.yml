@@ -6,7 +6,6 @@
         name: "{{ packages }}"
       vars:
         packages:
-          - ansifilter
           - arp-scan
           - b3sum
           - bash
