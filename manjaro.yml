@@ -1,0 +1,109 @@
+---
+- hosts: device
+  tasks:
+    - name: Install packages
+      pacman:
+        name: "{{ packages }}"
+      vars:
+        packages:
+          - ansifilter
+          - arp-scan
+          - b3sum
+          - bash
+          - bat
+          - bc
+          - bind
+          - boost
+          - bzip2
+          - chromium
+          - chrony
+          - clang
+          - cmake
+          - cpio
+          - cronie
+          - curl
+          - dmidecode
+          - dua-cli
+          - dust
+          - enscript
+          - ethtool
+          - fastfetch
+          - fd
+          - fish
+          - fping
+          - gawk
+          - gcc
+          - git
+          - git-delta
+          - gitui
+          - glib2
+          - go
+          - grep
+          - gzip
+          - helix
+          - htop
+          - hyperfine
+          - iotop
+          - iperf3
+          - jdk-openjdk
+          - keepassxc
+          - kitty
+          - ksh
+          - less
+          - lftp
+          - lsof
+          - make
+          - masscan
+          - ncdu
+          - neovim
+          - net-tools
+          - ninja
+          - nmap
+          - openssh
+          - openssl
+          - parted
+          - perl
+          - plocate
+          - procps-ng
+          - procs
+          - python
+          - python-jinja
+          - python-pip
+          - python-requests
+          - python-six
+          - python-yaml
+          - ranger
+          - rsync
+          - ruby
+          - ruby-irb
+          - screen
+          - sed
+          - shellcheck
+          - shfmt
+          - strace
+          - subversion
+          - sudo
+          - sysstat
+          - tar
+          - tcpdump
+          - the_silver_searcher
+          - tmux
+          - tokei
+          - ttf-fira-code
+          - uv
+          - vim
+          - wget
+          - xz
+          - zig
+          - zsh
+          - zstd
+    - name: Enable/start services
+      service:
+        name: "{{ item }}"
+        enabled: true
+        state: started
+      with_items:
+        - chronyd
+        - cronie
+        - sshd
+        - sysstat
