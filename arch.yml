@@ -107,6 +107,11 @@
           - zig
           - zsh
           - zstd
+    - name: Disable systemd-timesyncd
+      service:
+        name: systemd-timesyncd
+        enabled: false
+        state: stopped
     - name: Enable/start services
       service:
         name: "{{ item }}"
