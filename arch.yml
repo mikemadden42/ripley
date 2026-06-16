@@ -8,6 +8,7 @@
         packages:
           - arp-scan
           - b3sum
+          - base-devel
           - bash
           - bat
           - bc
