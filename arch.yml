@@ -25,6 +25,7 @@
           - dos2unix
           - dua-cli
           - dust
+          - dysk
           - enscript
           - ethtool
           - fastfetch
@@ -33,6 +34,7 @@
           - fping
           - gawk
           - gcc
+          - ghostty
           - git
           - git-delta
           - gitui
