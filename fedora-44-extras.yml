@@ -20,6 +20,8 @@
           - fping
           - git-delta
           - gitui
+          - gnome-extensions-app
+          - gnome-tweaks
           - helix
           - htop
           - hyperfine
