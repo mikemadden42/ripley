@@ -1,0 +1,13 @@
+---
+- hosts: device
+  tasks:
+    - name: Enable ghostty copr repo
+      command: dnf -y copr enable scottames/ghostty
+      args:
+        creates: /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:scottames:ghostty.repo
+    - name: Install packages
+      yum:
+        name: "{{ packages }}"
+      vars:
+        packages:
+          - ghostty
