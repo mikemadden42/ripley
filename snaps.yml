@@ -5,7 +5,7 @@
       snap:
         name: "{{ packages }}"
         channel: stable
-      when: ansible_architecture == "x86_64"
+      when: ansible_facts['architecture'] == "x86_64"
       vars:
         packages:
           - claude-code
