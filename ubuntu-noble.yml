@@ -163,6 +163,6 @@
       with_items:
         - cron
         - ntpsec
-        - rsyslog
         - ssh
         - sysstat
+        - systemd-journald
