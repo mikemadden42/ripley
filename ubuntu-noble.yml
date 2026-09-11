@@ -85,7 +85,7 @@
           - net-tools
           - ninja-build
           - nmap
-          - ntp
+          - ntpsec
           - openssh-client
           - openssh-server
           - openssl
@@ -162,7 +162,7 @@
         state: started
       with_items:
         - cron
-        - ntp
+        - ntpsec
         - rsyslog
         - ssh
         - sysstat
