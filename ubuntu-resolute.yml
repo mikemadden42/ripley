@@ -10,6 +10,7 @@
           - acpi
           - arp-scan
           - atop
+          - avahi-utils
           - b3sum
           - bash
           - bc
@@ -160,6 +161,7 @@
         enabled: true
         state: started
       with_items:
+        - avahi-daemon
         - cron
         - ntpsec
         - ssh
